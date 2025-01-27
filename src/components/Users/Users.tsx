@@ -28,6 +28,8 @@ function Users() {
 
   return (
     <div>
+      <h1>This is React test</h1>
+      <h2>THis is form</h2>
       <form onSubmit={handleSubmit} style={formStyles}>
         <div>
           <label htmlFor="name">Name:</label>
