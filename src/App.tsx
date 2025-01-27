@@ -1,4 +1,5 @@
 import PrimaryButton from "./components/PrimaryButton";
+import UserEvent from "./components/UserEvent/UserEvent";
 import Users from "./components/Users/Users";
 import UserTable from "./components/Users/UserTable";
 export const users = [
@@ -15,6 +16,7 @@ function App() {
       <PrimaryButton actionType="Delete" />
       <Users />
       <UserTable users={users} />
+      <UserEvent />
     </div>
   );
 }
