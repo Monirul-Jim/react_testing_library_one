@@ -1,3 +1,4 @@
+import Form from "./components/Form/Form";
 import PrimaryButton from "./components/PrimaryButton";
 import UserEvent from "./components/UserEvent/UserEvent";
 import Users from "./components/Users/Users";
@@ -17,6 +18,7 @@ function App() {
       <Users />
       <UserTable users={users} />
       <UserEvent />
+      <Form onSubmit={(data) => console.log(data)} />
     </div>
   );
 }
