@@ -15,7 +15,7 @@ const UserTable = ({ users }: Props) => {
   useEffect(() => {
     setTimeout(() => {
       setShowMessage(true);
-    }, 1000);
+    }, 2000);
   }, []);
   return (
     <div>
@@ -27,7 +27,7 @@ const UserTable = ({ users }: Props) => {
             <th style={{ padding: "8px", border: "1px solid #ddd" }}>Age</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody data-testid="users">
           {users.map((user) => (
             <tr key={user.id}>
               <td style={{ padding: "8px", border: "1px solid #ddd" }}>
@@ -43,7 +43,7 @@ const UserTable = ({ users }: Props) => {
           ))}
         </tbody>
       </table>
-      {showMessage && <div>Welcome Jim</div>}
+      {showMessage && <div data-testid="welcome">Welcome Jim</div>}
     </div>
   );
 };
