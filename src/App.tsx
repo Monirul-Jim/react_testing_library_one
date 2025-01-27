@@ -1,5 +1,11 @@
 import PrimaryButton from "./components/PrimaryButton";
 import Users from "./components/Users/Users";
+import UserTable from "./components/Users/UserTable";
+const users = [
+  { id: 1, name: "Alice", age: 30 },
+  { id: 2, name: "Bob", age: 25 },
+  { id: 3, name: "Charlie", age: 35 },
+];
 
 function App() {
   return (
@@ -8,6 +14,7 @@ function App() {
       <PrimaryButton />
       <PrimaryButton actionType="Delete" />
       <Users />
+      <UserTable users={users} />
     </div>
   );
 }
