@@ -30,6 +30,7 @@ function Users() {
     <div>
       <h1>This is React test</h1>
       <h2>THis is form</h2>
+      <p>Enter the form data</p>
       <form onSubmit={handleSubmit} style={formStyles}>
         <div>
           <label htmlFor="name">Name:</label>
@@ -40,6 +41,7 @@ function Users() {
             onChange={(e) => setName(e.target.value)}
             required
             style={inputStyles}
+            placeholder="Enter Your Name..."
           />
         </div>
         <div>
@@ -51,6 +53,7 @@ function Users() {
             onChange={(e) => setEmail(e.target.value)}
             required
             style={inputStyles}
+            placeholder="Enter Your Email ..."
           />
         </div>
         <div>
